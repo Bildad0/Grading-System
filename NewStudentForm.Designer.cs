@@ -42,6 +42,7 @@ namespace Report_card
             this.yearLabel = new System.Windows.Forms.Label();
             this.YearOfStudytxtBox = new System.Windows.Forms.TextBox();
             this.Save = new System.Windows.Forms.Button();
+            this.BackBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FirstName
@@ -81,7 +82,7 @@ namespace Report_card
             this.header.AutoSize = true;
             this.header.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.header.Image = global::Report_card.Properties.Resources.WIP_7th_anniversary_wallpaper_dark;
-            this.header.Location = new System.Drawing.Point(124, 44);
+            this.header.Location = new System.Drawing.Point(92, 46);
             this.header.Name = "header";
             this.header.Size = new System.Drawing.Size(125, 15);
             this.header.TabIndex = 0;
@@ -152,11 +153,22 @@ namespace Report_card
             this.Save.Text = "Save";
             this.Save.UseVisualStyleBackColor = true;
             // 
+            // BackBtn
+            // 
+            this.BackBtn.Location = new System.Drawing.Point(31, 322);
+            this.BackBtn.Name = "BackBtn";
+            this.BackBtn.Size = new System.Drawing.Size(75, 23);
+            this.BackBtn.TabIndex = 14;
+            this.BackBtn.Text = "Back";
+            this.BackBtn.UseVisualStyleBackColor = true;
+            this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
+            // 
             // NewStudentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(337, 375);
+            this.Controls.Add(this.BackBtn);
             this.Controls.Add(this.Save);
             this.Controls.Add(this.YearOfStudytxtBox);
             this.Controls.Add(this.yearLabel);
@@ -192,5 +204,6 @@ namespace Report_card
         private System.Windows.Forms.Label yearLabel;
         private System.Windows.Forms.TextBox YearOfStudytxtBox;
         private System.Windows.Forms.Button Save;
+        private System.Windows.Forms.Button BackBtn;
     }
 }

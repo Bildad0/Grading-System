@@ -16,5 +16,12 @@ namespace Report_card
         {
             InitializeComponent();
         }
+
+        private void BackBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ResultEntryForm resultEntryForm = new ResultEntryForm();
+            resultEntryForm.Show();
+        }
     }
 }

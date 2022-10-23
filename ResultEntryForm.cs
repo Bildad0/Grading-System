@@ -19,6 +19,7 @@ namespace Report_card
 
         private void AddStudentBtn_Click(object sender, EventArgs e)
         {
+            this.Hide();
             NewStudentForm newStudentForm = new NewStudentForm();
             newStudentForm.Show();
         }
