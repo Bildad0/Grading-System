@@ -32,11 +32,16 @@ namespace Report_card
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewStudentForm));
             this.FirstName = new System.Windows.Forms.Label();
             this.LastName = new System.Windows.Forms.Label();
-            this.Name = new System.Windows.Forms.Label();
             this.firstNameTextBox = new System.Windows.Forms.TextBox();
             this.lastNameTextBox = new System.Windows.Forms.TextBox();
-            this.nameTextBox1 = new System.Windows.Forms.TextBox();
             this.header = new System.Windows.Forms.Label();
+            this.studentIdLabel = new System.Windows.Forms.Label();
+            this.studentIdTextBox = new System.Windows.Forms.TextBox();
+            this.classLabel = new System.Windows.Forms.Label();
+            this.ClassComboBox = new System.Windows.Forms.ComboBox();
+            this.yearLabel = new System.Windows.Forms.Label();
+            this.YearOfStudytxtBox = new System.Windows.Forms.TextBox();
+            this.Save = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FirstName
@@ -57,15 +62,6 @@ namespace Report_card
             this.LastName.TabIndex = 2;
             this.LastName.Text = "Last Name :";
             // 
-            // Name
-            // 
-            this.Name.AutoSize = true;
-            this.Name.Location = new System.Drawing.Point(30, 172);
-            this.Name.Name = "Name";
-            this.Name.Size = new System.Drawing.Size(62, 13);
-            this.Name.TabIndex = 3;
-            this.Name.Text = "Name        :";
-            // 
             // firstNameTextBox
             // 
             this.firstNameTextBox.Location = new System.Drawing.Point(92, 117);
@@ -80,13 +76,6 @@ namespace Report_card
             this.lastNameTextBox.Size = new System.Drawing.Size(183, 20);
             this.lastNameTextBox.TabIndex = 5;
             // 
-            // nameTextBox1
-            // 
-            this.nameTextBox1.Location = new System.Drawing.Point(92, 169);
-            this.nameTextBox1.Name = "nameTextBox1";
-            this.nameTextBox1.Size = new System.Drawing.Size(183, 20);
-            this.nameTextBox1.TabIndex = 6;
-            // 
             // header
             // 
             this.header.AutoSize = true;
@@ -98,19 +87,90 @@ namespace Report_card
             this.header.TabIndex = 0;
             this.header.Text = "Student Data Entry Form";
             // 
+            // studentIdLabel
+            // 
+            this.studentIdLabel.AutoSize = true;
+            this.studentIdLabel.Location = new System.Drawing.Point(28, 176);
+            this.studentIdLabel.Name = "studentIdLabel";
+            this.studentIdLabel.Size = new System.Drawing.Size(62, 13);
+            this.studentIdLabel.TabIndex = 7;
+            this.studentIdLabel.Text = "Student Id :";
+            // 
+            // studentIdTextBox
+            // 
+            this.studentIdTextBox.Location = new System.Drawing.Point(92, 173);
+            this.studentIdTextBox.Name = "studentIdTextBox";
+            this.studentIdTextBox.Size = new System.Drawing.Size(183, 20);
+            this.studentIdTextBox.TabIndex = 8;
+            // 
+            // classLabel
+            // 
+            this.classLabel.AutoSize = true;
+            this.classLabel.Location = new System.Drawing.Point(28, 204);
+            this.classLabel.Name = "classLabel";
+            this.classLabel.Size = new System.Drawing.Size(62, 13);
+            this.classLabel.TabIndex = 9;
+            this.classLabel.Text = "Class         :";
+            // 
+            // ClassComboBox
+            // 
+            this.ClassComboBox.FormattingEnabled = true;
+            this.ClassComboBox.Items.AddRange(new object[] {
+            "JFT-2018",
+            "JFT-2019",
+            "JFT-2020",
+            "JFT-2021",
+            "JFT-2022",
+            "JFT-2023"});
+            this.ClassComboBox.Location = new System.Drawing.Point(92, 201);
+            this.ClassComboBox.Name = "ClassComboBox";
+            this.ClassComboBox.Size = new System.Drawing.Size(183, 21);
+            this.ClassComboBox.TabIndex = 10;
+            // 
+            // yearLabel
+            // 
+            this.yearLabel.AutoSize = true;
+            this.yearLabel.Location = new System.Drawing.Point(28, 240);
+            this.yearLabel.Name = "yearLabel";
+            this.yearLabel.Size = new System.Drawing.Size(77, 13);
+            this.yearLabel.TabIndex = 11;
+            this.yearLabel.Text = "Year of Study :";
+            // 
+            // YearOfStudytxtBox
+            // 
+            this.YearOfStudytxtBox.Location = new System.Drawing.Point(111, 237);
+            this.YearOfStudytxtBox.Name = "YearOfStudytxtBox";
+            this.YearOfStudytxtBox.Size = new System.Drawing.Size(82, 20);
+            this.YearOfStudytxtBox.TabIndex = 12;
+            // 
+            // Save
+            // 
+            this.Save.Location = new System.Drawing.Point(200, 322);
+            this.Save.Name = "Save";
+            this.Save.Size = new System.Drawing.Size(75, 23);
+            this.Save.TabIndex = 13;
+            this.Save.Text = "Save";
+            this.Save.UseVisualStyleBackColor = true;
+            // 
             // NewStudentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(385, 450);
-            this.Controls.Add(this.nameTextBox1);
+            this.ClientSize = new System.Drawing.Size(337, 375);
+            this.Controls.Add(this.Save);
+            this.Controls.Add(this.YearOfStudytxtBox);
+            this.Controls.Add(this.yearLabel);
+            this.Controls.Add(this.ClassComboBox);
+            this.Controls.Add(this.classLabel);
+            this.Controls.Add(this.studentIdTextBox);
+            this.Controls.Add(this.studentIdLabel);
             this.Controls.Add(this.lastNameTextBox);
             this.Controls.Add(this.firstNameTextBox);
-            this.Controls.Add(this.Name);
             this.Controls.Add(this.LastName);
             this.Controls.Add(this.FirstName);
             this.Controls.Add(this.header);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "NewStudentForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "New Student Form";
             this.ResumeLayout(false);
@@ -123,9 +183,14 @@ namespace Report_card
         private System.Windows.Forms.Label header;
         private System.Windows.Forms.Label FirstName;
         private System.Windows.Forms.Label LastName;
-        private System.Windows.Forms.Label Name;
         private System.Windows.Forms.TextBox firstNameTextBox;
         private System.Windows.Forms.TextBox lastNameTextBox;
-        private System.Windows.Forms.TextBox nameTextBox1;
+        private System.Windows.Forms.Label studentIdLabel;
+        private System.Windows.Forms.TextBox studentIdTextBox;
+        private System.Windows.Forms.Label classLabel;
+        private System.Windows.Forms.ComboBox ClassComboBox;
+        private System.Windows.Forms.Label yearLabel;
+        private System.Windows.Forms.TextBox YearOfStudytxtBox;
+        private System.Windows.Forms.Button Save;
     }
 }
