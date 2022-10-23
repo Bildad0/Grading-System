@@ -131,7 +131,7 @@ namespace Report_card
             // yearLabel
             // 
             this.yearLabel.AutoSize = true;
-            this.yearLabel.Location = new System.Drawing.Point(28, 240);
+            this.yearLabel.Location = new System.Drawing.Point(13, 237);
             this.yearLabel.Name = "yearLabel";
             this.yearLabel.Size = new System.Drawing.Size(77, 13);
             this.yearLabel.TabIndex = 11;
@@ -139,9 +139,9 @@ namespace Report_card
             // 
             // YearOfStudytxtBox
             // 
-            this.YearOfStudytxtBox.Location = new System.Drawing.Point(111, 237);
+            this.YearOfStudytxtBox.Location = new System.Drawing.Point(92, 234);
             this.YearOfStudytxtBox.Name = "YearOfStudytxtBox";
-            this.YearOfStudytxtBox.Size = new System.Drawing.Size(82, 20);
+            this.YearOfStudytxtBox.Size = new System.Drawing.Size(64, 20);
             this.YearOfStudytxtBox.TabIndex = 12;
             // 
             // Save

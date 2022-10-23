@@ -61,13 +61,14 @@ namespace Report_card
             this.addStudentBtn = new System.Windows.Forms.Button();
             this.saveGradeBtn = new System.Windows.Forms.Button();
             this.studentImage = new System.Windows.Forms.PictureBox();
+            this.ImageLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.reportDataset)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentImage)).BeginInit();
             this.SuspendLayout();
             // 
             // searchText
             // 
-            this.searchText.Location = new System.Drawing.Point(233, 93);
+            this.searchText.Location = new System.Drawing.Point(186, 149);
             this.searchText.Name = "searchText";
             this.searchText.Size = new System.Drawing.Size(194, 20);
             this.searchText.TabIndex = 0;
@@ -87,9 +88,9 @@ namespace Report_card
             // 
             // searchBtn
             // 
-            this.searchBtn.Location = new System.Drawing.Point(352, 119);
+            this.searchBtn.Location = new System.Drawing.Point(386, 147);
             this.searchBtn.Name = "searchBtn";
-            this.searchBtn.Size = new System.Drawing.Size(75, 23);
+            this.searchBtn.Size = new System.Drawing.Size(56, 23);
             this.searchBtn.TabIndex = 2;
             this.searchBtn.Text = "Search";
             this.searchBtn.UseVisualStyleBackColor = true;
@@ -106,11 +107,11 @@ namespace Report_card
             // studentId
             // 
             this.studentId.AutoSize = true;
-            this.studentId.Location = new System.Drawing.Point(163, 96);
+            this.studentId.Location = new System.Drawing.Point(183, 133);
             this.studentId.Name = "studentId";
-            this.studentId.Size = new System.Drawing.Size(64, 13);
+            this.studentId.Size = new System.Drawing.Size(61, 13);
             this.studentId.TabIndex = 4;
-            this.studentId.Text = "Student ID :";
+            this.studentId.Text = "Student ID ";
             // 
             // yearOfStudy
             // 
@@ -297,7 +298,7 @@ namespace Report_card
             // 
             this.saveGradeBtn.Location = new System.Drawing.Point(309, 555);
             this.saveGradeBtn.Name = "saveGradeBtn";
-            this.saveGradeBtn.Size = new System.Drawing.Size(97, 23);
+            this.saveGradeBtn.Size = new System.Drawing.Size(86, 23);
             this.saveGradeBtn.TabIndex = 28;
             this.saveGradeBtn.Text = "Save Grade";
             this.saveGradeBtn.UseVisualStyleBackColor = true;
@@ -306,7 +307,7 @@ namespace Report_card
             // 
             this.studentImage.Image = global::Report_card.Properties.Resources.userimage;
             this.studentImage.InitialImage = ((System.Drawing.Image)(resources.GetObject("studentImage.InitialImage")));
-            this.studentImage.Location = new System.Drawing.Point(25, 60);
+            this.studentImage.Location = new System.Drawing.Point(45, 60);
             this.studentImage.MaximumSize = new System.Drawing.Size(132, 109);
             this.studentImage.Name = "studentImage";
             this.studentImage.Size = new System.Drawing.Size(132, 109);
@@ -314,11 +315,21 @@ namespace Report_card
             this.studentImage.TabStop = false;
             this.studentImage.WaitOnLoad = true;
             // 
+            // ImageLabel
+            // 
+            this.ImageLabel.AutoSize = true;
+            this.ImageLabel.Location = new System.Drawing.Point(42, 44);
+            this.ImageLabel.Name = "ImageLabel";
+            this.ImageLabel.Size = new System.Drawing.Size(36, 13);
+            this.ImageLabel.TabIndex = 30;
+            this.ImageLabel.Text = "Image";
+            // 
             // ResultEntryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(458, 617);
+            this.Controls.Add(this.ImageLabel);
             this.Controls.Add(this.studentImage);
             this.Controls.Add(this.saveGradeBtn);
             this.Controls.Add(this.addStudentBtn);
@@ -392,6 +403,7 @@ namespace Report_card
         private System.Windows.Forms.Button addStudentBtn;
         private System.Windows.Forms.Button saveGradeBtn;
         private System.Windows.Forms.PictureBox studentImage;
+        private System.Windows.Forms.Label ImageLabel;
     }
 }
 
