@@ -23,5 +23,34 @@ namespace Report_card
             ResultEntryForm resultEntryForm = new ResultEntryForm();
             resultEntryForm.Show();
         }
+
+        private void Save_Click(object sender, EventArgs e)
+        {
+            using(var ctx =new DataBaseContext())
+            {
+                var student = new Student()
+                {
+                    StudentID= studentIdTextBox.Text,
+                    StudentName= firstNameTextBox.Text+ " "+lastNameTextBox.Text,
+                    StudentClass= ClassComboBox.Text,
+                    YearOfStudy= int.Parse(YearOfStudytxtBox.Text)
+                };
+
+                ctx.Students.Add(student);
+                ctx.SaveChanges();
+                ResetFields();
+                MessageBox.Show($"{firstNameTextBox.Text} saved");
+            }
+        }
+
+        public void ResetFields()
+        {
+            studentIdTextBox.Text = "";
+            firstNameTextBox.Text = "";
+            lastNameTextBox.Text = "";
+            ClassComboBox.Text = "";
+            YearOfStudytxtBox.Text = "";
+
+        }
     }
 }
