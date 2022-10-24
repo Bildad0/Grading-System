@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace Report_card
 {
-    public class Grade
+   public class Units
     {
         [Key]
-        public int GradeID { get; set; }
-        public char GradeName { get; set; }
-        public string Unit { get; set; }
+        public int UnitId { get; set; }
+        public string UnitName { get; set; }
+        public Grade Grade { get; set; }
 
-        public ICollection<Units> Units { get; set; }
+        public ICollection<StudentClass> Classes { get; set; }
     }
 }

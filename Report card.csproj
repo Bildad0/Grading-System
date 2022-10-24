@@ -59,6 +59,15 @@
     <Compile Include="DatabaseConfigaration.cs" />
     <Compile Include="DataBaseContext.cs" />
     <Compile Include="Grade.cs" />
+    <Compile Include="Migrations\202210241526041_InitialCreate.cs" />
+    <Compile Include="Migrations\202210241526041_InitialCreate.designer.cs">
+      <DependentUpon>202210241526041_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202210241931292_migrations.cs" />
+    <Compile Include="Migrations\202210241931292_migrations.designer.cs">
+      <DependentUpon>202210241931292_migrations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ResultEntryForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +83,14 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Student.cs" />
+    <Compile Include="StudentClass.cs" />
+    <Compile Include="Units.cs" />
+    <EmbeddedResource Include="Migrations\202210241526041_InitialCreate.resx">
+      <DependentUpon>202210241526041_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210241931292_migrations.resx">
+      <DependentUpon>202210241931292_migrations.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NewStudentForm.resx">
       <DependentUpon>NewStudentForm.cs</DependentUpon>
     </EmbeddedResource>

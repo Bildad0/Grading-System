@@ -32,7 +32,7 @@ namespace Report_card
                 {
                     StudentID= studentIdTextBox.Text,
                     StudentName= firstNameTextBox.Text+ " "+lastNameTextBox.Text,
-                    StudentClass= ClassComboBox.Text,
+                    ClassName = ClassComboBox.Text,
                     YearOfStudy= int.Parse(YearOfStudytxtBox.Text)
                 };
 
@@ -50,7 +50,6 @@ namespace Report_card
             lastNameTextBox.Text = "";
             ClassComboBox.Text = "";
             YearOfStudytxtBox.Text = "";
-
         }
     }
 }

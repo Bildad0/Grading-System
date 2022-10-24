@@ -14,6 +14,8 @@ namespace Report_card
         }
         public DbSet<Student> Students { get; set; }
         public DbSet<Grade> Grades { get; set; }
+        public DbSet<Units> Units { get; set; }
+        public DbSet<StudentClass> StudentClasses { get; set; }
     }
 
    

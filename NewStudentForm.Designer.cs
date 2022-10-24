@@ -146,7 +146,7 @@ namespace Report_card
             // 
             // Save
             // 
-            this.Save.Location = new System.Drawing.Point(200, 322);
+            this.Save.Location = new System.Drawing.Point(238, 322);
             this.Save.Name = "Save";
             this.Save.Size = new System.Drawing.Size(75, 23);
             this.Save.TabIndex = 13;
