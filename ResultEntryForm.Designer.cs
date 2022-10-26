@@ -94,6 +94,7 @@ namespace Report_card
             this.searchBtn.TabIndex = 2;
             this.searchBtn.Text = "Search";
             this.searchBtn.UseVisualStyleBackColor = true;
+            this.searchBtn.Click += new System.EventHandler(this.searchBtn_Click);
             // 
             // classes
             // 
@@ -305,6 +306,8 @@ namespace Report_card
             // 
             // studentImage
             // 
+            this.studentImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.studentImage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.studentImage.Image = global::Report_card.Properties.Resources.userimage;
             this.studentImage.InitialImage = ((System.Drawing.Image)(resources.GetObject("studentImage.InitialImage")));
             this.studentImage.Location = new System.Drawing.Point(45, 60);
@@ -313,6 +316,7 @@ namespace Report_card
             this.studentImage.Size = new System.Drawing.Size(132, 109);
             this.studentImage.TabIndex = 29;
             this.studentImage.TabStop = false;
+            this.studentImage.UseWaitCursor = true;
             this.studentImage.WaitOnLoad = true;
             // 
             // ImageLabel

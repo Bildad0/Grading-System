@@ -23,5 +23,28 @@ namespace Report_card
             NewStudentForm newStudentForm = new NewStudentForm();
             newStudentForm.Show();
         }
+
+        private void searchBtn_Click(object sender, EventArgs e)
+        {
+            string SearchTxt = searchText.Text.Trim().ToUpper();
+            SearchStudent(SearchTxt);
+        }
+
+        public void SearchStudent(string studentid)
+        {
+            using(var ctx= new DataBaseContext())
+            {
+                //error!
+                //Input string was not in a correct format
+                Student student = ctx.Students.Find(studentid);
+                var data = new Student()
+                {
+                    StudentID= searchText.Text,
+                    //StudentImage= studentImage.Image,
+                    StudentName=studentName.Text,
+                    YearOfStudy= int.Parse(yearTextBox.Text),
+                };
+            }
+        }
     }
 }

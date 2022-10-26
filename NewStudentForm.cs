@@ -30,7 +30,7 @@ namespace Report_card
             {
                 var student = new Student()
                 {
-                    StudentID= studentIdTextBox.Text,
+                    StudentID= studentIdTextBox.Text.ToUpper().Trim(),
                     StudentName= firstNameTextBox.Text+ " "+lastNameTextBox.Text,
                     ClassName = ClassComboBox.Text,
                     YearOfStudy= int.Parse(YearOfStudytxtBox.Text)
