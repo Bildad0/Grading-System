@@ -26,21 +26,22 @@ namespace Report_card
 
         private void searchBtn_Click(object sender, EventArgs e)
         {
-            string SearchTxt = searchText.Text.Trim().ToUpper();
+            int SearchTxt = int.Parse(searchText.Text);
             SearchStudent(SearchTxt);
         }
 
-        public void SearchStudent(string studentid)
+        public void SearchStudent(int id)
         {
             using(var ctx= new DataBaseContext())
             {
                 //error!
                 //Input string was not in a correct format
-                Student student = ctx.Students.Find(studentid);
+                Student student = ctx.Students.Find(id);
                 var data = new Student()
                 {
-                    StudentID= searchText.Text,
+                    id=int.Parse(searchText.Text),
                     //StudentImage= studentImage.Image,
+                    StudentID =studentIdTxtBox.Text,
                     StudentName=studentName.Text,
                     YearOfStudy= int.Parse(yearTextBox.Text),
                 };

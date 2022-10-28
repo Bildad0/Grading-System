@@ -43,6 +43,7 @@ namespace Report_card
             this.YearOfStudytxtBox = new System.Windows.Forms.TextBox();
             this.Save = new System.Windows.Forms.Button();
             this.BackBtn = new System.Windows.Forms.Button();
+            this.StudentListBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FirstName
@@ -146,7 +147,7 @@ namespace Report_card
             // 
             // Save
             // 
-            this.Save.Location = new System.Drawing.Point(238, 322);
+            this.Save.Location = new System.Drawing.Point(200, 231);
             this.Save.Name = "Save";
             this.Save.Size = new System.Drawing.Size(75, 23);
             this.Save.TabIndex = 13;
@@ -164,11 +165,22 @@ namespace Report_card
             this.BackBtn.UseVisualStyleBackColor = true;
             this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
             // 
+            // StudentListBtn
+            // 
+            this.StudentListBtn.Location = new System.Drawing.Point(200, 322);
+            this.StudentListBtn.Name = "StudentListBtn";
+            this.StudentListBtn.Size = new System.Drawing.Size(75, 23);
+            this.StudentListBtn.TabIndex = 15;
+            this.StudentListBtn.Text = "View list";
+            this.StudentListBtn.UseVisualStyleBackColor = true;
+            this.StudentListBtn.Click += new System.EventHandler(this.StudentListBtn_Click);
+            // 
             // NewStudentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(337, 375);
+            this.Controls.Add(this.StudentListBtn);
             this.Controls.Add(this.BackBtn);
             this.Controls.Add(this.Save);
             this.Controls.Add(this.YearOfStudytxtBox);
@@ -206,5 +218,6 @@ namespace Report_card
         private System.Windows.Forms.TextBox YearOfStudytxtBox;
         private System.Windows.Forms.Button Save;
         private System.Windows.Forms.Button BackBtn;
+        private System.Windows.Forms.Button StudentListBtn;
     }
 }

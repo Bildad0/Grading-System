@@ -67,6 +67,10 @@
     <Compile Include="Migrations\202210241931292_migrations.designer.cs">
       <DependentUpon>202210241931292_migrations.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202210280949269_migrations1.cs" />
+    <Compile Include="Migrations\202210280949269_migrations1.designer.cs">
+      <DependentUpon>202210280949269_migrations1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ResultEntryForm.cs">
       <SubType>Form</SubType>
@@ -84,12 +88,21 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Student.cs" />
     <Compile Include="StudentClass.cs" />
+    <Compile Include="StudentView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentView.Designer.cs">
+      <DependentUpon>StudentView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Units.cs" />
     <EmbeddedResource Include="Migrations\202210241526041_InitialCreate.resx">
       <DependentUpon>202210241526041_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202210241931292_migrations.resx">
       <DependentUpon>202210241931292_migrations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210280949269_migrations1.resx">
+      <DependentUpon>202210280949269_migrations1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewStudentForm.resx">
       <DependentUpon>NewStudentForm.cs</DependentUpon>
@@ -107,6 +120,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="StudentView.resx">
+      <DependentUpon>StudentView.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

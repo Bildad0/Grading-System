@@ -51,5 +51,11 @@ namespace Report_card
             ClassComboBox.Text = "";
             YearOfStudytxtBox.Text = "";
         }
+
+        private void StudentListBtn_Click(object sender, EventArgs e)
+        {
+            StudentView studentView = new StudentView();
+            studentView.Show();
+        }
     }
 }

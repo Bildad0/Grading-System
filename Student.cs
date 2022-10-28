@@ -11,6 +11,8 @@ namespace Report_card
    public class Student
     {
         [Key]
+        public int id { get; set; }
+
         public string StudentID { get; set; }
         public string StudentName { get; set; }
         public string ClassName { get; set; }

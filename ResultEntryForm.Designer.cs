@@ -62,6 +62,8 @@ namespace Report_card
             this.saveGradeBtn = new System.Windows.Forms.Button();
             this.studentImage = new System.Windows.Forms.PictureBox();
             this.ImageLabel = new System.Windows.Forms.Label();
+            this.studentIdTxtBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.reportDataset)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentImage)).BeginInit();
             this.SuspendLayout();
@@ -328,11 +330,30 @@ namespace Report_card
             this.ImageLabel.TabIndex = 30;
             this.ImageLabel.Text = "Image";
             // 
+            // studentIdTxtBox
+            // 
+            this.studentIdTxtBox.Location = new System.Drawing.Point(105, 252);
+            this.studentIdTxtBox.Name = "studentIdTxtBox";
+            this.studentIdTxtBox.ReadOnly = true;
+            this.studentIdTxtBox.Size = new System.Drawing.Size(202, 20);
+            this.studentIdTxtBox.TabIndex = 31;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(35, 255);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(64, 13);
+            this.label1.TabIndex = 32;
+            this.label1.Text = "Student ID :";
+            // 
             // ResultEntryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(458, 617);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.studentIdTxtBox);
             this.Controls.Add(this.ImageLabel);
             this.Controls.Add(this.studentImage);
             this.Controls.Add(this.saveGradeBtn);
@@ -408,6 +429,8 @@ namespace Report_card
         private System.Windows.Forms.Button saveGradeBtn;
         private System.Windows.Forms.PictureBox studentImage;
         private System.Windows.Forms.Label ImageLabel;
+        private System.Windows.Forms.TextBox studentIdTxtBox;
+        private System.Windows.Forms.Label label1;
     }
 }
 
