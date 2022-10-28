@@ -26,8 +26,7 @@ namespace Report_card
 
         private void searchBtn_Click(object sender, EventArgs e)
         {
-            int SearchTxt = int.Parse(searchText.Text);
-            SearchStudent(SearchTxt);
+            SearchStudent(int.Parse(searchText.Text.Trim()));
         }
 
         public void SearchStudent(int id)
@@ -37,14 +36,10 @@ namespace Report_card
                 //error!
                 //Input string was not in a correct format
                 Student student = ctx.Students.Find(id);
-                var data = new Student()
-                {
-                    id=int.Parse(searchText.Text),
-                    //StudentImage= studentImage.Image,
-                    StudentID =studentIdTxtBox.Text,
-                    StudentName=studentName.Text,
-                    YearOfStudy= int.Parse(yearTextBox.Text),
-                };
+                searchText.Text = student.id.ToString();
+                studentIdTxtBox.Text = student.StudentID.ToString();
+                studentName.Text = student.StudentName.ToString();
+                yearTextBox.Text = student.YearOfStudy.ToString();
             }
         }
     }
