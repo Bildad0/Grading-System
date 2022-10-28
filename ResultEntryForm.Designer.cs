@@ -60,10 +60,10 @@ namespace Report_card
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.addStudentBtn = new System.Windows.Forms.Button();
             this.saveGradeBtn = new System.Windows.Forms.Button();
-            this.studentImage = new System.Windows.Forms.PictureBox();
             this.ImageLabel = new System.Windows.Forms.Label();
             this.studentIdTxtBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.studentImage = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.reportDataset)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentImage)).BeginInit();
             this.SuspendLayout();
@@ -112,9 +112,9 @@ namespace Report_card
             this.studentId.AutoSize = true;
             this.studentId.Location = new System.Drawing.Point(183, 133);
             this.studentId.Name = "studentId";
-            this.studentId.Size = new System.Drawing.Size(61, 13);
+            this.studentId.Size = new System.Drawing.Size(21, 13);
             this.studentId.TabIndex = 4;
-            this.studentId.Text = "Student ID ";
+            this.studentId.Text = "ID ";
             // 
             // yearOfStudy
             // 
@@ -306,21 +306,6 @@ namespace Report_card
             this.saveGradeBtn.Text = "Save Grade";
             this.saveGradeBtn.UseVisualStyleBackColor = true;
             // 
-            // studentImage
-            // 
-            this.studentImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.studentImage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.studentImage.Image = global::Report_card.Properties.Resources.userimage;
-            this.studentImage.InitialImage = ((System.Drawing.Image)(resources.GetObject("studentImage.InitialImage")));
-            this.studentImage.Location = new System.Drawing.Point(45, 60);
-            this.studentImage.MaximumSize = new System.Drawing.Size(132, 109);
-            this.studentImage.Name = "studentImage";
-            this.studentImage.Size = new System.Drawing.Size(132, 109);
-            this.studentImage.TabIndex = 29;
-            this.studentImage.TabStop = false;
-            this.studentImage.UseWaitCursor = true;
-            this.studentImage.WaitOnLoad = true;
-            // 
             // ImageLabel
             // 
             this.ImageLabel.AutoSize = true;
@@ -346,6 +331,21 @@ namespace Report_card
             this.label1.Size = new System.Drawing.Size(64, 13);
             this.label1.TabIndex = 32;
             this.label1.Text = "Student ID :";
+            // 
+            // studentImage
+            // 
+            this.studentImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.studentImage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.studentImage.Image = global::Report_card.Properties.Resources.userimage;
+            this.studentImage.InitialImage = ((System.Drawing.Image)(resources.GetObject("studentImage.InitialImage")));
+            this.studentImage.Location = new System.Drawing.Point(45, 60);
+            this.studentImage.MaximumSize = new System.Drawing.Size(132, 109);
+            this.studentImage.Name = "studentImage";
+            this.studentImage.Size = new System.Drawing.Size(132, 109);
+            this.studentImage.TabIndex = 29;
+            this.studentImage.TabStop = false;
+            this.studentImage.UseWaitCursor = true;
+            this.studentImage.WaitOnLoad = true;
             // 
             // ResultEntryForm
             // 

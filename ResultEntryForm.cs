@@ -33,13 +33,29 @@ namespace Report_card
         {
             using(var ctx= new DataBaseContext())
             {
-                //error!
-                //Input string was not in a correct format
                 Student student = ctx.Students.Find(id);
-                searchText.Text = student.id.ToString();
-                studentIdTxtBox.Text = student.StudentID.ToString();
-                studentName.Text = student.StudentName.ToString();
-                yearTextBox.Text = student.YearOfStudy.ToString();
+
+                if (student == null)
+                {
+                    MessageBox.Show("No such User");
+                }
+                else if(student.ClassName == null)
+                {
+                    searchText.Text = student.id.ToString();
+                    studentIdTxtBox.Text = student.StudentID.ToString();
+                    studentName.Text = student.StudentName.ToString();
+                    yearTextBox.Text = student.YearOfStudy.ToString();
+                    classTextbox.Text = "Null";
+                }
+                else
+                {
+                    searchText.Text = student.id.ToString();
+                    studentIdTxtBox.Text = student.StudentID.ToString();
+                    studentName.Text = student.StudentName.ToString();
+                    yearTextBox.Text = student.YearOfStudy.ToString();
+                    classTextbox.Text = student.ClassName.ToString();
+                }
+               
             }
         }
     }
