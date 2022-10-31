@@ -27,7 +27,7 @@ namespace Report_card
             List<Student> students = new List<Student>();
             using(var ctx = new DataBaseContext())
             {
-                students = ctx.Students.ToList();
+                students = ctx.Students.OrderBy(s=>s.YearOfStudy).ToList();
             }
             studentDataGridView.DataSource = students;
         }

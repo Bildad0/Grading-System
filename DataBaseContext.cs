@@ -10,7 +10,8 @@ namespace Report_card
     public class DataBaseContext : DbContext
     {
         public DataBaseContext() : base("GradingSystem")
-        { 
+        {
+            Database.SetInitializer(new DataBaseInitializer());
         }
         public DbSet<Student> Students { get; set; }
         public DbSet<Grade> Grades { get; set; }
