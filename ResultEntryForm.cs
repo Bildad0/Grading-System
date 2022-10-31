@@ -27,6 +27,19 @@ namespace Report_card
         private void SearchBtn_Click(object sender, EventArgs e)
         {
             SearchStudent(searchText.Text.ToUpper());
+            //LoadUnits();
+        }
+
+
+        //get list of units from the units dataset, load it to each textbost uner unit lable
+        public void LoadUnits()
+        {
+          List<Units> unit = new List<Units>();
+          using(var ctx = new DataBaseContext())
+            {
+                unit = ctx.Units.ToList();   
+            }
+ 
         }
 
         public void SearchStudent(string id)

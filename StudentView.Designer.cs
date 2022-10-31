@@ -36,9 +36,9 @@ namespace Report_card
             // studentDataGridView
             // 
             this.studentDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.studentDataGridView.Location = new System.Drawing.Point(25, 38);
+            this.studentDataGridView.Location = new System.Drawing.Point(76, 32);
             this.studentDataGridView.Name = "studentDataGridView";
-            this.studentDataGridView.Size = new System.Drawing.Size(749, 392);
+            this.studentDataGridView.Size = new System.Drawing.Size(661, 392);
             this.studentDataGridView.TabIndex = 0;
             // 
             // StudentView

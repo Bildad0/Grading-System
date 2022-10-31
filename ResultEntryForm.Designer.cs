@@ -43,7 +43,7 @@ namespace Report_card
             this.unitsLabel = new System.Windows.Forms.Label();
             this.marksLabel = new System.Windows.Forms.Label();
             this.firstUnitTextBox = new System.Windows.Forms.TextBox();
-            this.firstunitInput = new System.Windows.Forms.TextBox();
+            this.FirstUnitMarks = new System.Windows.Forms.TextBox();
             this.secondUnitTextBox = new System.Windows.Forms.TextBox();
             this.thirdUnitTextBox = new System.Windows.Forms.TextBox();
             this.fourthUnitTextBox = new System.Windows.Forms.TextBox();
@@ -51,13 +51,13 @@ namespace Report_card
             this.sixthunitTextBox = new System.Windows.Forms.TextBox();
             this.seventhUnitTextBox = new System.Windows.Forms.TextBox();
             this.eigthUnitTextBox = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.SecondUnitMarks = new System.Windows.Forms.TextBox();
+            this.ThirdUnitMarks = new System.Windows.Forms.TextBox();
+            this.FourthUnitMarks = new System.Windows.Forms.TextBox();
+            this.FifthUnitMarks = new System.Windows.Forms.TextBox();
+            this.SixthUnitMarks = new System.Windows.Forms.TextBox();
+            this.SeventhUnitMarks = new System.Windows.Forms.TextBox();
+            this.EightUnitMarks = new System.Windows.Forms.TextBox();
             this.addStudentBtn = new System.Windows.Forms.Button();
             this.saveGradeBtn = new System.Windows.Forms.Button();
             this.ImageLabel = new System.Windows.Forms.Label();
@@ -154,9 +154,9 @@ namespace Report_card
             this.unitsLabel.AutoSize = true;
             this.unitsLabel.Location = new System.Drawing.Point(32, 296);
             this.unitsLabel.Name = "unitsLabel";
-            this.unitsLabel.Size = new System.Drawing.Size(26, 13);
+            this.unitsLabel.Size = new System.Drawing.Size(31, 13);
             this.unitsLabel.TabIndex = 9;
-            this.unitsLabel.Text = "Unit";
+            this.unitsLabel.Text = "Units";
             // 
             // marksLabel
             // 
@@ -175,12 +175,12 @@ namespace Report_card
             this.firstUnitTextBox.Size = new System.Drawing.Size(233, 20);
             this.firstUnitTextBox.TabIndex = 11;
             // 
-            // firstunitInput
+            // FirstUnitMarks
             // 
-            this.firstunitInput.Location = new System.Drawing.Point(309, 331);
-            this.firstunitInput.Name = "firstunitInput";
-            this.firstunitInput.Size = new System.Drawing.Size(54, 20);
-            this.firstunitInput.TabIndex = 12;
+            this.FirstUnitMarks.Location = new System.Drawing.Point(309, 331);
+            this.FirstUnitMarks.Name = "FirstUnitMarks";
+            this.FirstUnitMarks.Size = new System.Drawing.Size(54, 20);
+            this.FirstUnitMarks.TabIndex = 12;
             // 
             // secondUnitTextBox
             // 
@@ -238,54 +238,54 @@ namespace Report_card
             this.eigthUnitTextBox.Size = new System.Drawing.Size(233, 20);
             this.eigthUnitTextBox.TabIndex = 19;
             // 
-            // textBox1
+            // SecondUnitMarks
             // 
-            this.textBox1.Location = new System.Drawing.Point(309, 357);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(54, 20);
-            this.textBox1.TabIndex = 20;
+            this.SecondUnitMarks.Location = new System.Drawing.Point(309, 357);
+            this.SecondUnitMarks.Name = "SecondUnitMarks";
+            this.SecondUnitMarks.Size = new System.Drawing.Size(54, 20);
+            this.SecondUnitMarks.TabIndex = 20;
             // 
-            // textBox2
+            // ThirdUnitMarks
             // 
-            this.textBox2.Location = new System.Drawing.Point(309, 384);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(54, 20);
-            this.textBox2.TabIndex = 21;
+            this.ThirdUnitMarks.Location = new System.Drawing.Point(309, 384);
+            this.ThirdUnitMarks.Name = "ThirdUnitMarks";
+            this.ThirdUnitMarks.Size = new System.Drawing.Size(54, 20);
+            this.ThirdUnitMarks.TabIndex = 21;
             // 
-            // textBox3
+            // FourthUnitMarks
             // 
-            this.textBox3.Location = new System.Drawing.Point(309, 410);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(54, 20);
-            this.textBox3.TabIndex = 22;
+            this.FourthUnitMarks.Location = new System.Drawing.Point(309, 410);
+            this.FourthUnitMarks.Name = "FourthUnitMarks";
+            this.FourthUnitMarks.Size = new System.Drawing.Size(54, 20);
+            this.FourthUnitMarks.TabIndex = 22;
             // 
-            // textBox4
+            // FifthUnitMarks
             // 
-            this.textBox4.Location = new System.Drawing.Point(309, 436);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(54, 20);
-            this.textBox4.TabIndex = 23;
+            this.FifthUnitMarks.Location = new System.Drawing.Point(309, 436);
+            this.FifthUnitMarks.Name = "FifthUnitMarks";
+            this.FifthUnitMarks.Size = new System.Drawing.Size(54, 20);
+            this.FifthUnitMarks.TabIndex = 23;
             // 
-            // textBox5
+            // SixthUnitMarks
             // 
-            this.textBox5.Location = new System.Drawing.Point(309, 462);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(54, 20);
-            this.textBox5.TabIndex = 24;
+            this.SixthUnitMarks.Location = new System.Drawing.Point(309, 462);
+            this.SixthUnitMarks.Name = "SixthUnitMarks";
+            this.SixthUnitMarks.Size = new System.Drawing.Size(54, 20);
+            this.SixthUnitMarks.TabIndex = 24;
             // 
-            // textBox6
+            // SeventhUnitMarks
             // 
-            this.textBox6.Location = new System.Drawing.Point(309, 488);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(54, 20);
-            this.textBox6.TabIndex = 25;
+            this.SeventhUnitMarks.Location = new System.Drawing.Point(309, 488);
+            this.SeventhUnitMarks.Name = "SeventhUnitMarks";
+            this.SeventhUnitMarks.Size = new System.Drawing.Size(54, 20);
+            this.SeventhUnitMarks.TabIndex = 25;
             // 
-            // textBox7
+            // EightUnitMarks
             // 
-            this.textBox7.Location = new System.Drawing.Point(309, 514);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(54, 20);
-            this.textBox7.TabIndex = 26;
+            this.EightUnitMarks.Location = new System.Drawing.Point(309, 514);
+            this.EightUnitMarks.Name = "EightUnitMarks";
+            this.EightUnitMarks.Size = new System.Drawing.Size(54, 20);
+            this.EightUnitMarks.TabIndex = 26;
             // 
             // addStudentBtn
             // 
@@ -358,13 +358,13 @@ namespace Report_card
             this.Controls.Add(this.studentImage);
             this.Controls.Add(this.saveGradeBtn);
             this.Controls.Add(this.addStudentBtn);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.EightUnitMarks);
+            this.Controls.Add(this.SeventhUnitMarks);
+            this.Controls.Add(this.SixthUnitMarks);
+            this.Controls.Add(this.FifthUnitMarks);
+            this.Controls.Add(this.FourthUnitMarks);
+            this.Controls.Add(this.ThirdUnitMarks);
+            this.Controls.Add(this.SecondUnitMarks);
             this.Controls.Add(this.eigthUnitTextBox);
             this.Controls.Add(this.seventhUnitTextBox);
             this.Controls.Add(this.sixthunitTextBox);
@@ -372,7 +372,7 @@ namespace Report_card
             this.Controls.Add(this.fourthUnitTextBox);
             this.Controls.Add(this.thirdUnitTextBox);
             this.Controls.Add(this.secondUnitTextBox);
-            this.Controls.Add(this.firstunitInput);
+            this.Controls.Add(this.FirstUnitMarks);
             this.Controls.Add(this.firstUnitTextBox);
             this.Controls.Add(this.marksLabel);
             this.Controls.Add(this.unitsLabel);
@@ -410,7 +410,7 @@ namespace Report_card
         private System.Windows.Forms.Label unitsLabel;
         private System.Windows.Forms.Label marksLabel;
         private System.Windows.Forms.TextBox firstUnitTextBox;
-        private System.Windows.Forms.TextBox firstunitInput;
+        private System.Windows.Forms.TextBox FirstUnitMarks;
         private System.Windows.Forms.TextBox secondUnitTextBox;
         private System.Windows.Forms.TextBox thirdUnitTextBox;
         private System.Windows.Forms.TextBox fourthUnitTextBox;
@@ -418,13 +418,13 @@ namespace Report_card
         private System.Windows.Forms.TextBox sixthunitTextBox;
         private System.Windows.Forms.TextBox seventhUnitTextBox;
         private System.Windows.Forms.TextBox eigthUnitTextBox;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox SecondUnitMarks;
+        private System.Windows.Forms.TextBox ThirdUnitMarks;
+        private System.Windows.Forms.TextBox FourthUnitMarks;
+        private System.Windows.Forms.TextBox FifthUnitMarks;
+        private System.Windows.Forms.TextBox SixthUnitMarks;
+        private System.Windows.Forms.TextBox SeventhUnitMarks;
+        private System.Windows.Forms.TextBox EightUnitMarks;
         private System.Windows.Forms.Button addStudentBtn;
         private System.Windows.Forms.Button saveGradeBtn;
         private System.Windows.Forms.PictureBox studentImage;

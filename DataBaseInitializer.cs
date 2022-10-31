@@ -11,6 +11,7 @@ namespace Report_card
     {
         protected override void Seed(DataBaseContext context)
         {
+            //seed student Classes to the database
             IList<StudentClass> DefaultClasses = new List<StudentClass>
             {
                 new StudentClass() { ClassName = "JFT-2015" },
@@ -25,6 +26,22 @@ namespace Report_card
             };
 
             context.StudentClasses.AddRange(DefaultClasses);
+            base.Seed(context);
+
+            //Seed Units to the database
+
+            IList<Units> DefaultUnits = new List<Units> 
+            { 
+                new Units(){UnitName="Computer Architecture"},
+                new Units(){UnitName="Introduction to C#"},
+                new Units(){UnitName="Introduction to C++"},
+                new Units(){UnitName="Installation and customization"},
+                new Units(){UnitName="Introduction to Java"},
+                new Units(){UnitName=""},
+                new Units(){UnitName=""},
+                new Units(){UnitName=""}
+            };
+            context.Units.AddRange(DefaultUnits);
             base.Seed(context);
         }
     }
