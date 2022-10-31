@@ -11,7 +11,7 @@ namespace Report_card
    public class Student
     {
         [Key]
-        public int id { get; set; }
+        public int Id { get; set; }
 
         [Required(ErrorMessage ="Student's id is required")]
         public string StudentID { get; set; }

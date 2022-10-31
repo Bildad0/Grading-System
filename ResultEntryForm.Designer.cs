@@ -72,7 +72,7 @@ namespace Report_card
             // 
             this.searchText.Location = new System.Drawing.Point(186, 149);
             this.searchText.Name = "searchText";
-            this.searchText.Size = new System.Drawing.Size(194, 20);
+            this.searchText.Size = new System.Drawing.Size(156, 20);
             this.searchText.TabIndex = 0;
             // 
             // nameInput
@@ -90,7 +90,7 @@ namespace Report_card
             // 
             // searchBtn
             // 
-            this.searchBtn.Location = new System.Drawing.Point(386, 147);
+            this.searchBtn.Location = new System.Drawing.Point(371, 147);
             this.searchBtn.Name = "searchBtn";
             this.searchBtn.Size = new System.Drawing.Size(56, 23);
             this.searchBtn.TabIndex = 2;
@@ -112,9 +112,9 @@ namespace Report_card
             this.studentId.AutoSize = true;
             this.studentId.Location = new System.Drawing.Point(183, 133);
             this.studentId.Name = "studentId";
-            this.studentId.Size = new System.Drawing.Size(21, 13);
+            this.studentId.Size = new System.Drawing.Size(63, 13);
             this.studentId.TabIndex = 4;
-            this.studentId.Text = "ID ";
+            this.studentId.Text = "Student\'s Id";
             // 
             // yearOfStudy
             // 
@@ -317,10 +317,10 @@ namespace Report_card
             // 
             // studentIdTxtBox
             // 
-            this.studentIdTxtBox.Location = new System.Drawing.Point(105, 252);
+            this.studentIdTxtBox.Location = new System.Drawing.Point(65, 252);
             this.studentIdTxtBox.Name = "studentIdTxtBox";
             this.studentIdTxtBox.ReadOnly = true;
-            this.studentIdTxtBox.Size = new System.Drawing.Size(202, 20);
+            this.studentIdTxtBox.Size = new System.Drawing.Size(65, 20);
             this.studentIdTxtBox.TabIndex = 31;
             // 
             // label1
@@ -328,9 +328,9 @@ namespace Report_card
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(35, 255);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 13);
+            this.label1.Size = new System.Drawing.Size(24, 13);
             this.label1.TabIndex = 32;
-            this.label1.Text = "Student ID :";
+            this.label1.Text = "ID :";
             // 
             // studentImage
             // 
