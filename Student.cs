@@ -15,10 +15,14 @@ namespace Report_card
 
         [Required(ErrorMessage ="Student's id is required")]
         public string StudentID { get; set; }
+
         [Required(ErrorMessage ="Student's name is required")]
         public string StudentName { get; set; }
+
         public string ClassName { get; set; }
+
         public byte[] StudentImage { get; set; }
+
         [Required(ErrorMessage ="Required Field")]
         public int YearOfStudy { get; set; }
 

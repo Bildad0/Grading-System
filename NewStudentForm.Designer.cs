@@ -29,6 +29,7 @@ namespace Report_card
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewStudentForm));
             this.FirstName = new System.Windows.Forms.Label();
             this.LastName = new System.Windows.Forms.Label();
@@ -44,6 +45,8 @@ namespace Report_card
             this.Save = new System.Windows.Forms.Button();
             this.BackBtn = new System.Windows.Forms.Button();
             this.StudentListBtn = new System.Windows.Forms.Button();
+            this.studentClassBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.studentClassBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // FirstName
@@ -116,8 +119,17 @@ namespace Report_card
             // 
             // ClassComboBox
             // 
+            this.ClassComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studentClassBindingSource, "ClassName", true));
+            this.ClassComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedItem", this.studentClassBindingSource, "ClassName", true));
+            this.ClassComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.studentClassBindingSource, "ClassName", true));
+            this.ClassComboBox.DropDownHeight = 150;
+            this.ClassComboBox.DropDownWidth = 200;
             this.ClassComboBox.FormattingEnabled = true;
+            this.ClassComboBox.IntegralHeight = false;
             this.ClassComboBox.Items.AddRange(new object[] {
+            "JFT-2015",
+            "JFT-2016",
+            "JFT-2017",
             "JFT-2018",
             "JFT-2019",
             "JFT-2020",
@@ -175,6 +187,10 @@ namespace Report_card
             this.StudentListBtn.UseVisualStyleBackColor = true;
             this.StudentListBtn.Click += new System.EventHandler(this.StudentListBtn_Click);
             // 
+            // studentClassBindingSource
+            // 
+            this.studentClassBindingSource.DataSource = typeof(Report_card.StudentClass);
+            // 
             // NewStudentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -198,6 +214,7 @@ namespace Report_card
             this.Name = "NewStudentForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "New Student Form";
+            ((System.ComponentModel.ISupportInitialize)(this.studentClassBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -219,5 +236,6 @@ namespace Report_card
         private System.Windows.Forms.Button Save;
         private System.Windows.Forms.Button BackBtn;
         private System.Windows.Forms.Button StudentListBtn;
+        private System.Windows.Forms.BindingSource studentClassBindingSource;
     }
 }

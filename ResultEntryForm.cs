@@ -24,7 +24,7 @@ namespace Report_card
             newStudentForm.Show();
         }
 
-        private void searchBtn_Click(object sender, EventArgs e)
+        private void SearchBtn_Click(object sender, EventArgs e)
         {
             SearchStudent(searchText.Text.ToUpper());
         }

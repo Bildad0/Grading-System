@@ -138,6 +138,24 @@
       <DependentUpon>StudentView.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\DatabaseConfigaration.datasource" />
+    <None Include="Properties\DataSources\DataBaseContext.datasource" />
+    <None Include="Properties\DataSources\DataBaseInitializer.datasource" />
+    <None Include="Properties\DataSources\Grade.datasource" />
+    <None Include="Properties\DataSources\NewStudentForm.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\Report_card.Migrations.Configuration.datasource" />
+    <None Include="Properties\DataSources\Report_card.Migrations.InitialCreate.datasource" />
+    <None Include="Properties\DataSources\Report_card.Migrations.migration2.datasource" />
+    <None Include="Properties\DataSources\Report_card.Migrations.migrations.datasource" />
+    <None Include="Properties\DataSources\Report_card.Migrations.migrations1.datasource" />
+    <None Include="Properties\DataSources\Report_card.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\Report_card.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\ResultEntryForm.datasource" />
+    <None Include="Properties\DataSources\Student.datasource" />
+    <None Include="Properties\DataSources\StudentClass.datasource" />
+    <None Include="Properties\DataSources\StudentView.datasource" />
+    <None Include="Properties\DataSources\Units.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

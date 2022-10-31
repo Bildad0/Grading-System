@@ -96,7 +96,7 @@ namespace Report_card
             this.searchBtn.TabIndex = 2;
             this.searchBtn.Text = "Search";
             this.searchBtn.UseVisualStyleBackColor = true;
-            this.searchBtn.Click += new System.EventHandler(this.searchBtn_Click);
+            this.searchBtn.Click += new System.EventHandler(this.SearchBtn_Click);
             // 
             // classes
             // 
