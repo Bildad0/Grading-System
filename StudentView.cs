@@ -30,6 +30,12 @@ namespace Report_card
                 students = ctx.Students.Include(nameof(Student.StudentClass)).OrderBy(s=>s.YearOfStudy).ToList();
             }
             studentDataGridView.DataSource = students;
+
+            //hide some data from view
+            studentDataGridView.Columns["Id"].Visible = false;
+            studentDataGridView.Columns["StudentImage"].Visible = false;
+            studentDataGridView.Columns["ClassId"].Visible = false;
+            studentDataGridView.Columns["Units"].Visible = false;
         }
     }
 }

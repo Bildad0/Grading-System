@@ -10,6 +10,11 @@ namespace Report_card
 {
    public class Student
     {
+
+        public Student()
+        {
+            this.Units = new HashSet<Units>();
+        }
         [Key]
         public int Id { get; set; }
 
@@ -31,5 +36,6 @@ namespace Report_card
 
        
         public virtual StudentClass StudentClass { get; set; }
+        public virtual ICollection<Units> Units { get; set; }
     }
 }

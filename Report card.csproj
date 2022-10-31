@@ -82,6 +82,10 @@
     <Compile Include="Migrations\202210310442332_migration2.designer.cs">
       <DependentUpon>202210310442332_migration2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202210311051382_1234.cs" />
+    <Compile Include="Migrations\202210311051382_1234.designer.cs">
+      <DependentUpon>202210311051382_1234.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ResultEntryForm.cs">
       <SubType>Form</SubType>
@@ -117,6 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202210310442332_migration2.resx">
       <DependentUpon>202210310442332_migration2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210311051382_1234.resx">
+      <DependentUpon>202210311051382_1234.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewStudentForm.resx">
       <DependentUpon>NewStudentForm.cs</DependentUpon>
