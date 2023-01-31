@@ -24,18 +24,32 @@ namespace Report_card
 
         public void Load_Data()
         {
+
+
             List<Student> students = new List<Student>();
             using(var ctx = new DataBaseContext())
             {
-                students = ctx.Students.Include(nameof(Student.StudentClass)).OrderBy(s=>s.YearOfStudy).ToList();
+                 students = ctx.Students.Include(nameof(Student.StudentClass)).OrderByDescending(s=>s.YearOfStudy).ToList();
+       
             }
             studentDataGridView.DataSource = students;
            
             //hide some data from view
-            studentDataGridView.Columns["StudentImage"].Visible = false;
             studentDataGridView.Columns["ClassId"].Visible = false;
             studentDataGridView.Columns["Units"].Visible = false;
             studentDataGridView.Columns["StudentClass"].Visible = false;
+        }
+
+        private void studentDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (studentDataGridView.Rows.Count >0)
+            {
+                foreach (DataGridViewRow row in studentDataGridView.SelectedRows)
+                {
+
+                }
+
+            }
         }
     }
 }

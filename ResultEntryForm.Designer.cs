@@ -51,7 +51,7 @@ namespace Report_card
             this.sixthunitTextBox = new System.Windows.Forms.TextBox();
             this.seventhUnitTextBox = new System.Windows.Forms.TextBox();
             this.eigthUnitTextBox = new System.Windows.Forms.TextBox();
-            this.SecondUnitMarks = new System.Windows.Forms.TextBox();
+            this.secondUnitMarks = new System.Windows.Forms.TextBox();
             this.ThirdUnitMarks = new System.Windows.Forms.TextBox();
             this.FourthUnitMarks = new System.Windows.Forms.TextBox();
             this.FifthUnitMarks = new System.Windows.Forms.TextBox();
@@ -238,12 +238,12 @@ namespace Report_card
             this.eigthUnitTextBox.Size = new System.Drawing.Size(233, 20);
             this.eigthUnitTextBox.TabIndex = 19;
             // 
-            // SecondUnitMarks
+            // secondUnitMarks
             // 
-            this.SecondUnitMarks.Location = new System.Drawing.Point(309, 357);
-            this.SecondUnitMarks.Name = "SecondUnitMarks";
-            this.SecondUnitMarks.Size = new System.Drawing.Size(54, 20);
-            this.SecondUnitMarks.TabIndex = 20;
+            this.secondUnitMarks.Location = new System.Drawing.Point(309, 357);
+            this.secondUnitMarks.Name = "secondUnitMarks";
+            this.secondUnitMarks.Size = new System.Drawing.Size(54, 20);
+            this.secondUnitMarks.TabIndex = 20;
             // 
             // ThirdUnitMarks
             // 
@@ -305,6 +305,7 @@ namespace Report_card
             this.saveGradeBtn.TabIndex = 28;
             this.saveGradeBtn.Text = "Save Grade";
             this.saveGradeBtn.UseVisualStyleBackColor = true;
+            this.saveGradeBtn.Click += new System.EventHandler(this.saveGradeBtn_Click);
             // 
             // ImageLabel
             // 
@@ -364,7 +365,7 @@ namespace Report_card
             this.Controls.Add(this.FifthUnitMarks);
             this.Controls.Add(this.FourthUnitMarks);
             this.Controls.Add(this.ThirdUnitMarks);
-            this.Controls.Add(this.SecondUnitMarks);
+            this.Controls.Add(this.secondUnitMarks);
             this.Controls.Add(this.eigthUnitTextBox);
             this.Controls.Add(this.seventhUnitTextBox);
             this.Controls.Add(this.sixthunitTextBox);
@@ -418,7 +419,7 @@ namespace Report_card
         private System.Windows.Forms.TextBox sixthunitTextBox;
         private System.Windows.Forms.TextBox seventhUnitTextBox;
         private System.Windows.Forms.TextBox eigthUnitTextBox;
-        private System.Windows.Forms.TextBox SecondUnitMarks;
+        private System.Windows.Forms.TextBox secondUnitMarks;
         private System.Windows.Forms.TextBox ThirdUnitMarks;
         private System.Windows.Forms.TextBox FourthUnitMarks;
         private System.Windows.Forms.TextBox FifthUnitMarks;

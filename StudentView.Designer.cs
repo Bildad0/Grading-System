@@ -29,6 +29,7 @@ namespace Report_card
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentView));
             this.studentDataGridView = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.studentDataGridView)).BeginInit();
             this.SuspendLayout();
@@ -36,17 +37,21 @@ namespace Report_card
             // studentDataGridView
             // 
             this.studentDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.studentDataGridView.Location = new System.Drawing.Point(76, 32);
+            this.studentDataGridView.Location = new System.Drawing.Point(1, 0);
             this.studentDataGridView.Name = "studentDataGridView";
-            this.studentDataGridView.Size = new System.Drawing.Size(661, 392);
+            this.studentDataGridView.Size = new System.Drawing.Size(799, 392);
             this.studentDataGridView.TabIndex = 0;
+            this.studentDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.studentDataGridView_CellContentClick);
             // 
             // StudentView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.studentDataGridView);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "StudentView";
             this.Text = "StudentView";
             this.Load += new System.EventHandler(this.StudentView_Load);
